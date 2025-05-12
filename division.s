@@ -3,10 +3,10 @@ _start:
 	mov r0, #20
 	mov r1, #4
 	mov	r2, #0
-	bl dividir
+	bl division
 	b stop
 
-dividir:
+division:
 	div_loop:
 		cmp r0,r1
 		blt div_done
