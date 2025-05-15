@@ -16,3 +16,7 @@ _start:
 	cpy r7, r4
 	rev r7, r4
 	add r7, r4
+
+	//not en un solo registro
+	mov r0, #0xa
+	mvn r0, r0
