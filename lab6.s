@@ -20,3 +20,6 @@ _start:
 	//not en un solo registro
 	mov r0, #0xa
 	mvn r0, r0
+
+	//modularizacion
+	extern module_sum
