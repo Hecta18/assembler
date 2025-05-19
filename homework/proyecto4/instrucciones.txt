@@ -1,0 +1,65 @@
+#Instrucciones
+## Instrucciones Generales:
+1. **Desarrollo del Proyecto**: Cada grupo debe diseñar y construir un circuito, programando la secuencia de activación 
+de los puertos GPIO del microcontrolador STM32 según las indicaciones del catedrático.
+   
+2. **Diagramas y Tablas**:
+   - Elaborar diagramas de estado y tablas de verdad que representen el comportamiento del sistema.
+   - Generar mapas de Karnaugh para simplificar las funciones lógicas.
+
+3. **Diseño y Simulación**:
+   - Diseñar el diagrama del circuito utilizando herramientas de simulación.
+   - Simular el circuito con software (ej. Livewire) para verificar su funcionamiento.
+
+4. **Componentes**: Hacer un listado completo de los componentes necesarios para la construcción del circuito.
+
+5. **Construcción**: Construir físicamente el circuito y demostrar su correcto funcionamiento.
+
+### Recomendaciones:
+- Realizar múltiples pruebas para asegurar el correcto funcionamiento del circuito.
+- Identificar correctamente los circuitos integrados antes de adquirirlos, consultando las hojas de datos.
+  
+### Entregables:
+1. **Archivos Fuente**: Incluir comentarios claros en el código.
+2. **Documento PDF**: Debe contener:
+   - Explicación detallada del trabajo.
+   - Especificaciones de registros, direcciones de memoria y puertos GPIO utilizados.
+   - Diagrama de flujo del programa.
+   - Diagrama de conexión del circuito.
+   - Análisis de fallos y soluciones implementadas.
+   - Asignación de roles dentro del grupo.
+   - Conclusiones y bibliografía con al menos tres fuentes confiables.
+
+## Temario Específico:
+- Diseñar un circuito controlado por STM32 que use 8 salidas GPIO para controlar LEDs en una secuencia cíclica, activada
+por una señal de reloj de 1.5 segundos. Incluir botones para ajustar la velocidad de la secuencia y un mecanismo visual 
+para indicar la velocidad actual.
+
+### Secuencia de Activación de LEDs
+    Estado 0: Todos los LEDs apagados (0 LED encendido).
+    Estado 1: LED 1 encendido.
+    Estado 2: LEDs 1, 2 y 3 encendidos.
+    Estado 3: LED 3 encendido.
+    Estado 4: LEDs 3, 4 y 5 encendidos.
+    Estado 5: LED 5 encendido.
+    Estado 6: LEDs 5, 6 y 7 encendidos.
+    Estado 7: LED 7 encendido.
+    Estado 8: LED 8 encendido.
+
+### Resumen de la Secuencia:
+    Estado 0: 00000000
+    Estado 1: 00000001
+    Estado 2: 00000111
+    Estado 3: 00000100
+    Estado 4: 00011100
+    Estado 5: 00010000
+    Estado 6: 00111000
+    Estado 7: 00000010
+    Estado 8: 00000010
+
+
+## Evaluación:
+- Cada miembro presentará su parte del proyecto y será calificado individualmente según su conocimiento del trabajo 
+    completo.
+- Se evaluará el funcionamiento del sistema, la funcionalidad del circuito, la documentación, el uso de subrutinas, el 
+    orden del código y la calidad del informe.
