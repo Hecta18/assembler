@@ -1,4 +1,5 @@
 #Instrucciones
+
 ## Instrucciones Generales:
 1. **Desarrollo del Proyecto**: Cada grupo debe diseñar y construir un circuito, programando la secuencia de activación 
 de los puertos GPIO del microcontrolador STM32 según las indicaciones del catedrático.
@@ -53,13 +54,11 @@ para indicar la velocidad actual.
     Estado 3: 00000100
     Estado 4: 00011100
     Estado 5: 00010000
-    Estado 6: 00111000
-    Estado 7: 00000010
-    Estado 8: 00000010
+    Estado 6: 01110000
+    Estado 7: 01000000
+    Estado 8: 10000000
 
 
 ## Evaluación:
-- Cada miembro presentará su parte del proyecto y será calificado individualmente según su conocimiento del trabajo 
-    completo.
 - Se evaluará el funcionamiento del sistema, la funcionalidad del circuito, la documentación, el uso de subrutinas, el 
     orden del código y la calidad del informe.
